@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walking Together on Gunaikurnai Country</title>
+<meta name="description" content="A 'did you know?' guide to the Gunaikurnai people of Gippsland, local Aboriginal services, shared history, reconciliation and First Nations achievers, with sources for every fact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#24160f; --ink-2:#4b372b; --muted:#6d5a4c;
+  --paper:#fffaf0; --cream:#f6efd8; --sand:#ece0b3;
+  --ochre:#f0a534; --sienna:#b4532f; --crimson:#a3233f; --maroon:#6d1a2d;
+  --brown:#73331f; --teal:#2a7b85; --navy:#12334e; --blue:#3458a6; --mist:#c4d9df;
+  --radius:18px; --shadow:0 2px 0 rgba(36,22,15,.08), 0 10px 30px -18px rgba(36,22,15,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;color-scheme:light}
+body{margin:0;font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper)}
+img{max-width:100%}
+a{color:var(--crimson);text-underline-offset:2px}
+a:hover{color:var(--maroon)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+h1,h2,h3,h4,.display{font-family:"Fjalla One",Impact,"Arial Narrow",sans-serif;font-weight:400;line-height:1.08;letter-spacing:.01em;text-transform:uppercase;margin:0 0 .5em}
+h2{font-size:clamp(2rem,5vw,3.2rem)}
+h3{font-size:1.45rem}
+h4{font-size:1.1rem;letter-spacing:.03em}
+p{margin:0 0 1em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:0;background:var(--navy);color:#fff;padding:10px 14px;z-index:99}
+.skip:focus{left:10px;top:10px}
+sup.cite{font-size:.68em;line-height:0;margin-left:1px;white-space:nowrap}
+sup.cite a{color:inherit;opacity:.75;text-decoration:none;font-weight:700}
+sup.cite a:hover{opacity:1;text-decoration:underline}
+sup.cite a+a::before{content:","}
+
+/* Notice */
+.notice{background:var(--navy);color:#f1e8cb;font-size:.95rem;padding:12px 0}
+.notice p{margin:0}
+.notice strong{color:var(--ochre)}
+
+/* Hero */
+.hero{position:relative;background:linear-gradient(180deg,#efe4b4 0%,#f3c06a 48%,#e08a3c 75%,#b4532f 100%);padding:56px 0 110px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:36px;align-items:center}
+.kicker{display:inline-flex;gap:8px;align-items:center;background:var(--maroon);color:#fff;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem;padding:6px 12px;border-radius:999px}
+.hero h1{font-size:clamp(2.6rem,7.5vw,5.4rem);margin:18px 0 14px;color:var(--ink)}
+.hero h1 span{color:var(--maroon)}
+.hero .lede{font-size:1.2rem;max-width:36ch;color:var(--ink-2)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-block;font-family:"Fjalla One",sans-serif;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;padding:12px 20px;border-radius:12px;background:var(--navy);color:#fff;border:0;cursor:pointer;font-size:1rem}
+.btn:hover{background:var(--maroon);color:#fff}
+.btn.alt{background:#fff;color:var(--maroon)}
+.btn.alt:hover{background:var(--cream);color:var(--maroon)}
+
+/* Fact rotator */
+.fact{background:#fff;border-radius:22px;padding:26px 26px 20px;box-shadow:var(--shadow);position:relative}
+.fact .badge{display:flex;align-items:center;gap:10px;font-family:"Fjalla One",sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--teal);font-size:1rem;margin-bottom:10px}
+.fact .star{width:36px;height:36px;flex:none}
+.fact p.text{font-size:1.18rem;min-height:5.4em;margin-bottom:14px}
+.fact .row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.fact .count{font-size:.85rem;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.fact p.text{transition:opacity .25s}.fact.fade p.text{opacity:.15}}
+
+.wave{display:block;width:100%;height:60px}
+.hero .wave{position:absolute;left:0;right:0;bottom:-1px}
+
+/* Nav */
+.toc{position:sticky;top:0;z-index:50;background:rgba(255,250,240,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--sand)}
+.toc ul{list-style:none;margin:0;padding:0 20px;display:flex;gap:4px;overflow-x:auto;max-width:1120px;margin:0 auto;scrollbar-width:thin}
+.toc a{display:block;white-space:nowrap;padding:14px 12px;font-family:"Fjalla One",sans-serif;text-transform:uppercase;letter-spacing:.04em;font-size:.95rem;color:var(--ink-2);text-decoration:none;border-bottom:3px solid transparent}
+.toc a:hover{color:var(--maroon);border-color:var(--ochre)}
+
+/* Sections */
+section.band{padding:72px 0}
+.eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:.82rem;color:var(--sienna);margin-bottom:6px}
+.intro{font-size:1.15rem;max-width:68ch;color:var(--ink-2)}
+.bg-cream{background:var(--cream)}
+.bg-white{background:#fff}
+.bg-dark{background:var(--maroon);color:#f8eedb}
+.bg-dark .eyebrow{color:var(--ochre)}
+.bg-dark .intro{color:#f1dfc6}
+.bg-dark a{color:#ffd28a}
+.bg-navy{background:var(--navy);color:#eef3f5}
+.bg-navy .eyebrow{color:var(--ochre)}
+.bg-navy .intro{color:#d5e3e8}
+.bg-navy a{color:#ffd28a}
+
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g5{grid-template-columns:repeat(5,1fr)}
+.card{background:#fff;border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.card h3{margin-bottom:.4em}
+.card p:last-child{margin-bottom:0}
+.bg-cream .card{background:#fffdf7}
+.mt{margin-top:28px}
+.mt-lg{margin-top:44px}
+
+/* Stat chips */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:30px 0}
+.stat{border-radius:16px;padding:18px;color:#fff}
+.stat b{display:block;font-family:"Fjalla One",sans-serif;font-size:2rem;line-height:1;font-weight:400;margin-bottom:6px}
+.stat span{font-size:.98rem}
+.s1{background:var(--maroon)}.s2{background:var(--teal)}.s3{background:var(--sienna)}.s4{background:var(--navy)}
+
+/* Clans */
+.clan{border-radius:var(--radius);padding:20px;color:#fff;min-height:220px;display:flex;flex-direction:column}
+.clan h3{font-size:clamp(1rem,1.5vw,1.3rem);margin-bottom:.3em;letter-spacing:0}
+.clan .alt{font-size:.85rem;opacity:.85;margin-bottom:10px}
+.clan p{font-size:.95rem;margin:0}
+.c1{background:var(--maroon)}.c2{background:var(--sienna)}.c3{background:var(--teal)}.c4{background:var(--navy)}.c5{background:var(--brown)}
+
+.list{margin:0;padding-left:1.1em}
+.list li{margin-bottom:.4em}
+.pill-list{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.pill-list li{background:var(--cream);border:1px solid var(--sand);border-radius:999px;padding:6px 12px;font-size:.95rem}
+
+/* Words */
+.words{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.word{background:#fff;border-radius:16px;padding:16px;border-top:6px solid var(--ochre);box-shadow:var(--shadow)}
+.word .w{font-family:"Fjalla One",sans-serif;font-size:1.5rem;color:var(--maroon);line-height:1.1}
+.word .m{font-size:.95rem;color:var(--ink-2)}
+.callout{border-left:6px solid var(--teal);background:#eef6f7;padding:14px 18px;border-radius:0 14px 14px 0;font-size:.98rem}
+.bg-dark .callout{background:rgba(255,255,255,.08);border-color:var(--ochre);color:#f8eedb}
+
+/* Timeline */
+.timeline{list-style:none;margin:30px 0 0;padding:0;position:relative}
+.timeline::before{content:"";position:absolute;left:92px;top:6px;bottom:6px;width:3px;background:rgba(240,165,52,.55);border-radius:3px}
+.timeline li{display:grid;grid-template-columns:80px 1fr;gap:34px;padding:0 0 22px;position:relative}
+.timeline .yr{font-family:"Fjalla One",sans-serif;font-size:1.25rem;color:var(--ochre);text-align:right;line-height:1.3}
+.timeline li::after{content:"";position:absolute;left:86px;top:7px;width:15px;height:15px;border-radius:50%;background:var(--ochre);box-shadow:0 0 0 4px var(--maroon)}
+.timeline .tx{max-width:70ch}
+.timeline .tx b{color:#fff}
+.bg-cream .timeline::before{background:var(--sand)}
+.bg-cream .timeline li::after{box-shadow:0 0 0 4px var(--cream);background:var(--sienna)}
+.bg-cream .timeline .yr{color:var(--sienna)}
+.bg-cream .timeline .tx b{color:var(--ink)}
+
+/* Services */
+.svc{display:flex;flex-direction:column;border-radius:var(--radius);background:#fff;box-shadow:var(--shadow);overflow:hidden}
+.svc .top{padding:14px 20px;color:#fff;font-family:"Fjalla One",sans-serif;text-transform:uppercase;letter-spacing:.05em;font-size:.85rem}
+.svc .body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.svc h3{font-size:1.25rem;margin:0}
+.svc .meta{font-size:.95rem;color:var(--ink-2)}
+.svc .phone{font-family:"Fjalla One",sans-serif;font-size:1.3rem;color:var(--navy);text-decoration:none}
+.svc .links{margin-top:auto;font-size:.95rem}
+.t-health{background:var(--teal)}.t-legal{background:var(--navy)}.t-family{background:var(--sienna)}.t-crisis{background:var(--crimson)}.t-culture{background:var(--brown)}
+.alert{display:flex;gap:14px;align-items:center;background:var(--crimson);color:#fff;border-radius:16px;padding:16px 20px;margin-top:22px}
+.alert b{font-family:"Fjalla One",sans-serif;font-size:1.6rem;font-weight:400}
+
+/* Calendar */
+.cal-head{display:flex;flex-wrap:wrap;gap:16px;align-items:end;justify-content:space-between}
+.cal-head label{font-weight:700;display:block;margin-bottom:6px}
+.cal-head select{font:inherit;font-size:1.05rem;padding:10px 14px;border-radius:12px;border:2px solid var(--navy);background:#fff;color:var(--ink);min-width:220px}
+.months{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:22px}
+.month{all:unset;cursor:pointer;background:#fff;border-radius:16px;padding:14px 12px;box-shadow:var(--shadow);border:2px solid transparent;display:flex;flex-direction:column;gap:4px;min-height:96px}
+.month .mn{font-family:"Fjalla One",sans-serif;font-size:1.5rem;color:var(--sienna);line-height:1}
+.month .who{font-size:.86rem;color:var(--ink-2);line-height:1.3}
+.month:hover{border-color:var(--ochre)}
+.month[aria-pressed="true"]{background:var(--maroon);border-color:var(--maroon)}
+.month[aria-pressed="true"] .mn{color:var(--ochre)}
+.month[aria-pressed="true"] .who{color:#f6e6cf}
+.month:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.twins{margin-top:26px}
+.twins h3{font-size:1.7rem}
+.person{display:grid;grid-template-columns:150px 1fr;border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:var(--shadow);margin-bottom:16px}
+.person .side{padding:18px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;gap:10px}
+.person .side .day{font-family:"Fjalla One",sans-serif;font-size:2.6rem;line-height:1}
+.person .side .tag{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;opacity:.9}
+.person .main{padding:18px 22px}
+.person h4{font-size:1.5rem;margin-bottom:2px}
+.person .sub{color:var(--muted);font-size:.95rem;margin-bottom:8px}
+.person .local{display:inline-block;background:var(--ochre);color:var(--ink);font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;border-radius:999px;padding:3px 10px;margin-bottom:8px}
+.f-music{background:var(--crimson)}.f-sport{background:var(--teal)}.f-politics{background:var(--navy)}.f-art{background:var(--sienna)}.f-health{background:var(--blue)}.f-science{background:var(--brown)}.f-law{background:var(--maroon)}.f-lit{background:#7a4f1d}
+
+/* Gap bar */
+.gapbar{display:flex;height:58px;border-radius:14px;overflow:hidden;margin:18px 0 12px;box-shadow:var(--shadow)}
+.gapbar div{display:flex;align-items:center;justify-content:center;color:#fff;font-family:"Fjalla One",sans-serif;font-size:1.35rem}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;list-style:none;padding:0;margin:0;font-size:.95rem}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:6px;vertical-align:-2px}
+.k-met{background:#1f6b3a}.k-on{background:var(--teal)}.k-imp{background:var(--ochre)}.k-none{background:#8a7a6c}.k-worse{background:var(--crimson)}.k-na{background:#c9bfae}
+
+/* RAP steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin:18px 0}
+.steps div{padding:18px;color:#fff}
+.steps b{display:block;font-family:"Fjalla One",sans-serif;font-size:1.4rem;font-weight:400;text-transform:uppercase}
+.steps div:nth-child(1){background:var(--teal)}.steps div:nth-child(2){background:var(--sienna)}.steps div:nth-child(3){background:var(--crimson)}.steps div:nth-child(4){background:var(--maroon)}
+
+dl.gloss{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:0}
+dl.gloss div{background:#fff;border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+dl.gloss dt{font-family:"Fjalla One",sans-serif;text-transform:uppercase;font-size:1.15rem;color:var(--maroon);margin-bottom:4px}
+dl.gloss dd{margin:0}
+
+/* Actions */
+.actions{counter-reset:a;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.actions li{counter-increment:a;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:16px 18px 16px 64px;position:relative}
+.actions li::before{content:counter(a);position:absolute;left:16px;top:14px;width:34px;height:34px;border-radius:50%;background:var(--ochre);color:var(--ink);font-family:"Fjalla One",sans-serif;display:grid;place-items:center;font-size:1.1rem}
+.actions b{color:#fff;font-family:"Fjalla One",sans-serif;text-transform:uppercase;letter-spacing:.03em;font-weight:400;font-size:1.1rem}
+
+/* Sources */
+.sources{columns:2;column-gap:36px;font-size:.92rem;padding-left:2.2em;margin:0}
+.sources li{break-inside:avoid;margin-bottom:8px;scroll-margin-top:80px}
+.sources li:target{background:#fff1cf;border-radius:6px;outline:4px solid #fff1cf}
+
+footer{background:var(--ink);color:#e9dccb;padding:36px 0;font-size:.95rem}
+footer a{color:var(--ochre)}
+.totop{position:fixed;right:16px;bottom:16px;background:var(--maroon);color:#fff;border-radius:999px;padding:10px 14px;text-decoration:none;font-family:"Fjalla One",sans-serif;text-transform:uppercase;font-size:.85rem;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .2s}
+.totop.show{opacity:1;pointer-events:auto}
+.totop:hover{color:#fff;background:var(--navy)}
+
+@media (max-width:980px){
+  .g4,.g5{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .words{grid-template-columns:repeat(2,1fr)}
+  .months{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .hero{padding:36px 0 90px}
+  .hero-grid,.g2,.g3{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  dl.gloss,.actions{grid-template-columns:1fr}
+  .sources{columns:1}
+  .timeline::before{left:6px}
+  .timeline li{grid-template-columns:1fr;gap:2px;padding-left:30px}
+  .timeline li::after{left:0}
+  .timeline .yr{text-align:left}
+  .person{grid-template-columns:1fr}
+  .person .side{flex-direction:row;align-items:center}
+  section.band{padding:56px 0}
+}
+@media (max-width:460px){
+  .g4,.g5,.stats,.words{grid-template-columns:1fr}
+  .months{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="notice" role="note">
+  <div class="wrap">
+    <p><strong>Cultural notice:</strong> Aboriginal and Torres Strait Islander readers are advised that this page contains names of people who have died, and references to frontier violence. We acknowledge the Gunaikurnai people, Traditional Owners of much of Gippsland, and pay our respects to their Elders past and present.</p>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Wunman Njinde · Welcome<sup class="cite"><a href="#s14">14</a></sup></span>
+      <h1>Walking together on <span>Gunaikurnai Country</span></h1>
+      <p class="lede">A “did you know?” guide to the Gunaikurnai people of Gippsland, local Aboriginal services, the history we share, First Nations achievers, and what reconciliation looks like in practice.</p>
+      <div class="btns">
+        <a class="btn" href="#country">Explore Gunaikurnai Country</a>
+        <a class="btn alt" href="#achievers">Find your birth-month twin</a>
+      </div>
+    </div>
+    <aside class="fact" id="fact" aria-live="polite">
+      <div class="badge">
+        <svg class="star" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 30 Q16 26 22 18" stroke="#f0a534" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M30 6l4.1 8.6 9.4 1.2-6.9 6.5 1.8 9.3L30 27.1l-8.4 4.5 1.8-9.3-6.9-6.5 9.4-1.2z" fill="#a3233f"/></svg>
+        Did you know?
+      </div>
+      <p class="text" id="factText">Loading a fact…</p>
+      <div class="row">
+        <span class="count" id="factCount"></span>
+        <button class="btn" id="factBtn" type="button">Show me another</button>
+      </div>
+    </aside>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32 C240,62 480,2 720,30 C960,58 1200,6 1440,30 L1440,60 L0,60 Z" fill="#fffaf0"/></svg>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <ul>
+    <li><a href="#country">Country</a></li>
+    <li><a href="#culture">Culture</a></li>
+    <li><a href="#history">History</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#achievers">Achievers</a></li>
+    <li><a href="#reconciliation">Reconciliation</a></li>
+    <li><a href="#closing-the-gap">Closing the Gap</a></li>
+    <li><a href="#spotlight">Spotlight</a></li>
+    <li><a href="#action">Take action</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+
+<!-- ============ COUNTRY ============ -->
+<section class="band" id="country">
+  <div class="wrap">
+    <p class="eyebrow">Profile</p>
+    <h2>Gunaikurnai Country</h2>
+    <p class="intro">The Gunaikurnai are the Traditional Owners of much of Gippsland, in Victoria’s south-east. “Gunaikurnai” is the agreed name that came out of native title negotiations; you will also see older spellings such as Gunai, Kurnai and Gunnai.<sup class="cite"><a href="#s1">1</a></sup> Gunaikurnai see land (<em>Warruk</em>), waters (<em>Yarnda</em>), air (<em>Watpootjan</em>) and every living thing as one.<sup class="cite"><a href="#s13">13</a></sup></p>
+
+    <div class="stats">
+      <div class="stat s1"><b>22 Oct 2010</b><span>Federal Court recognises Gunaikurnai native title over much of Gippsland<sup class="cite"><a href="#s4">4</a></sup></span></div>
+      <div class="stat s2"><b>First</b><span>settlement made under Victoria’s Traditional Owner Settlement Act 2010<sup class="cite"><a href="#s4">4</a></sup></span></div>
+      <div class="stat s3"><b>10 → 14</b><span>parks handed back as Aboriginal title in 2010; GLaWAC now lists 14 under joint management<sup class="cite"><a href="#s4">4</a><a href="#s5">5</a></sup></span></div>
+      <div class="stat s4"><b>~100</b><span>First Peoples employed by GLaWAC across Gippsland<sup class="cite"><a href="#s3">3</a></sup></span></div>
+    </div>
+
+    <h3>The five clans</h3>
+    <p>The Gunaikurnai nation is made up of five clans. The spellings below are the ones endorsed by the GLaWAC Elders’ Council; the Bataluk Cultural Trail uses older spellings, shown underneath.<sup class="cite"><a href="#s1">1</a><a href="#s2">2</a><a href="#s9">9</a></sup></p>
+    <div class="grid g5 mt">
+      <div class="clan c1"><h3>Brataualung</h3><div class="alt">Bratwoloong</div><p>South Gippsland: Cape Liptrap and Tarwin Meadows east to Merriman’s Creek, inland to about Mirboo, plus Port Albert and Wilsons Promontory.<sup class="cite"><a href="#s9">9</a></sup></p></div>
+      <div class="clan c2"><h3>Brayakaulung</h3><div class="alt">Brayakooloong</div><p>Around Sale, Providence Ponds and the Avon and Latrobe rivers, west of Lake Wellington to Mount Baw Baw and Mount Howitt.<sup class="cite"><a href="#s9">9</a></sup></p></div>
+      <div class="clan c3"><h3>Brabralung</h3><div class="alt">Brabawooloong</div><p>East Gippsland’s Mitchell, Nicholson and Tambo rivers, north to Bairnsdale and Bruthen.<sup class="cite"><a href="#s9">9</a></sup></p></div>
+      <div class="clan c4"><h3>Tatungalung</h3><div class="alt">Tatungooloong</div><p>The coast around Lakes Entrance, Ninety Mile Beach, Lakes Victoria and Wellington, and Raymond Island.<sup class="cite"><a href="#s9">9</a></sup></p></div>
+      <div class="clan c5"><h3>Krauatungalung</h3><div class="alt">Krowathunkooloong</div><p>The Snowy River country from Cape Everard (Point Hicks) to Lake Tyers, including the Bemm and Buchan rivers.<sup class="cite"><a href="#s9">9</a></sup></p></div>
+    </div>
+
+    <div class="grid g2 mt-lg">
+      <div class="card">
+        <h3>GLaWAC</h3>
+        <p>The <strong>Gunaikurnai Land and Waters Aboriginal Corporation</strong> was set up in 2007 and is the Registered Aboriginal Party for Gunaikurnai Country under Victoria’s Aboriginal Heritage Act 2006.<sup class="cite"><a href="#s1">1</a></sup> It represents Gunaikurnai people on native title, cultural heritage, and land, water and natural resource management.<sup class="cite"><a href="#s13">13</a></sup> Its crews care for Country, protect cultural heritage and deliver environmental services.<sup class="cite"><a href="#s2">2</a></sup></p>
+        <p><a href="https://gunaikurnai.org/" rel="noopener">gunaikurnai.org</a></p>
+      </div>
+      <div class="card">
+        <h3>Native title and the settlement</h3>
+        <p>The Gunaikurnai lodged their native title claim in 1997. On 22 October 2010 the Federal Court recognised their native title, and on the same day the State signed a Recognition and Settlement Agreement with them.<sup class="cite"><a href="#s4">4</a></sup> The agreement lets Gunaikurnai people hunt, fish and gather on public land for traditional, non-commercial purposes.<sup class="cite"><a href="#s4">4</a></sup> In recognition of its significance to Gunaikurnai people, the Knob Reserve at Stratford was chosen as the place to sign the 2010 determination.<sup class="cite"><a href="#s12">12</a></sup></p>
+      </div>
+    </div>
+
+    <div class="card mt">
+      <h3>Jointly managed parks and reserves</h3>
+      <p>Ten parks and reserves were granted as Aboriginal title in the 2010 settlement and are jointly managed with the State.<sup class="cite"><a href="#s4">4</a></sup> A board with a majority of Traditional Owners oversees them, and Gunaikurnai and Parks Victoria rangers share on-ground management.<sup class="cite"><a href="#s5">5</a></sup> Their plan, approved in 2018, was Victoria’s first Joint Management Plan.<sup class="cite"><a href="#s6">6</a></sup></p>
+      <ul class="pill-list">
+        <li>The Knob Reserve, Stratford</li><li>Tarra-Bulga National Park</li><li>Mitchell River National Park</li><li>The Lakes National Park</li><li>Gippsland Lakes Coastal Park</li><li>New Guinea Cave (Snowy River NP)</li><li>Lake Tyers catchment area</li><li>Buchan Caves Reserve</li><li>Gippsland Lakes Reserve, Raymond Island</li><li>Corringle Foreshore Reserve</li>
+      </ul>
+      <p class="mt" style="font-size:.9rem;color:var(--muted)">List as published by First Peoples – State Relations.<sup class="cite"><a href="#s4">4</a></sup></p>
+    </div>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true" style="background:#fffaf0"><path d="M0,30 C240,0 480,60 720,30 C960,0 1200,56 1440,28 L1440,60 L0,60 Z" fill="#f6efd8"/></svg>
+
+<!-- ============ CULTURE ============ -->
+<section class="band bg-cream" id="culture" style="padding-top:40px">
+  <div class="wrap">
+    <p class="eyebrow">Culture</p>
+    <h2>Stories, words and places</h2>
+
+    <div class="grid g2 mt">
+      <div class="card">
+        <h3>Borun and Tuk</h3>
+        <p>In the Gunaikurnai creation story, the first man, Borun the pelican, came down from the mountains carrying his bark canoe. All the way he heard a tapping sound he couldn’t place. When he reached the water and set the canoe down, he found Tuk the musk duck inside. They married and became the parents of the five clans.<sup class="cite"><a href="#s7">7</a><a href="#s8">8</a></sup></p>
+        <p>GLaWAC notes there are many ways to tell a story, and shares its versions as a starting point.<sup class="cite"><a href="#s7">7</a></sup> One telling on the Bataluk Cultural Trail is credited to Robert Andy, a Tatungooloong Gunaikurnai man.<sup class="cite"><a href="#s8">8</a></sup></p>
+      </div>
+      <div class="card">
+        <h3>Wrens and the Nargun</h3>
+        <p>In Gunaikurnai lore, all men belong to one order, <em>Yeerung</em>, and all women to <em>Djeetgun</em>. Both are small wrens. GLaWAC names Yeerung as the southern emu-wren and Djeetgun as the superb blue wren; Ramahyuck’s telling pairs the birds the other way round.<sup class="cite"><a href="#s7">7</a><a href="#s87">87</a></sup></p>
+        <p>The Nargun is a large female creature said to live in a cave behind the waterfall at the Den of Nargun in Mitchell River National Park.<sup class="cite"><a href="#s7">7</a></sup> The site is of great cultural significance, especially to Gunaikurnai women.<sup class="cite"><a href="#s12">12</a></sup></p>
+      </div>
+    </div>
+
+    <h3 class="mt-lg">A few Gunaikurnai words</h3>
+    <div class="words mt">
+      <div class="word"><div class="w">Wunman Njinde</div><div class="m">Welcome<sup class="cite"><a href="#s14">14</a></sup></div></div>
+      <div class="word"><div class="w">Warruk</div><div class="m">Land<sup class="cite"><a href="#s13">13</a></sup></div></div>
+      <div class="word"><div class="w">Yarnda</div><div class="m">Waters<sup class="cite"><a href="#s13">13</a></sup></div></div>
+      <div class="word"><div class="w">Watpootjan</div><div class="m">Air<sup class="cite"><a href="#s13">13</a></sup></div></div>
+      <div class="word"><div class="w">Bataluk</div><div class="m">Lizard<sup class="cite"><a href="#s10">10</a></sup></div></div>
+      <div class="word"><div class="w">Gellung Warl</div><div class="m">Tip of the spear<sup class="cite"><a href="#s26">26</a></sup></div></div>
+      <div class="word"><div class="w">Yuck</div><div class="m">Mother, or own (as in Ramahyuck)<sup class="cite"><a href="#s18">18</a></sup></div></div>
+      <div class="word"><div class="w">Bung Yarnda</div><div class="m">The name for Lake Tyers<sup class="cite"><a href="#s17">17</a></sup></div></div>
+    </div>
+    <p class="callout mt">Language belongs to community. GLaWAC explains that today’s Gunaikurnai words come from interpretation of language, and it works to share this material with community in a balanced way.<sup class="cite"><a href="#s1">1</a></sup> If you plan to use these words publicly, check with GLaWAC first.</p>
+
+    <div class="grid g2 mt-lg">
+      <div class="card">
+        <h3>The Bataluk Cultural Trail</h3>
+        <p>The trail follows traditional routes used by Gunaikurnai people for over 30,000 years and winds through East Gippsland like the tail of a lizard.<sup class="cite"><a href="#s10">10</a><a href="#s85">85</a></sup> Its eleven sites are:<sup class="cite"><a href="#s11">11</a></sup></p>
+        <ol class="list">
+          <li>White Woman’s Waterhole, Won Wron</li>
+          <li>The Lagoon, Sale Common</li>
+          <li>The Knob Reserve, Stratford</li>
+          <li>Ramahyuck Cemetery, Perry Bridge</li>
+          <li>Den of Nargun, Mitchell River National Park</li>
+          <li>Krowathunkooloong Keeping Place, Bairnsdale</li>
+          <li>Howitt Park, Bairnsdale</li>
+          <li>Legend Rock, Metung</li>
+          <li>Buchan Caves</li>
+          <li>Burnt Bridge Reserve, Lake Tyers</li>
+          <li>Salmon Rock and Gunai Boardwalk, Cape Conran</li>
+        </ol>
+        <p class="mt">Middens in East Gippsland have been dated at more than 10,000 years old.<sup class="cite"><a href="#s12">12</a></sup> It is an offence under Victoria’s heritage law to tamper with or remove anything from an Aboriginal site.<sup class="cite"><a href="#s11">11</a></sup></p>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Krowathunkooloong Keeping Place</h3>
+          <p>Named after one of the five clans, the Keeping Place was named in 1991 and opened in 1994 on the grounds of the Gippsland and East Gippsland Aboriginal Co-operative in Bairnsdale.<sup class="cite"><a href="#s16">16</a></sup> GEGAC describes it as a place to understand a living, continuing culture rather than a museum. Guided tours are available, and entry is $10 for adults and $6 for children.<sup class="cite"><a href="#s15">15</a></sup></p>
+          <p><a href="https://gegac.org.au/keepingplace/" rel="noopener">Book a visit</a></p>
+        </div>
+        <div class="card mt">
+          <h3>Art on Country</h3>
+          <p>The Borun &amp; Tuk Gallery at the Gippsland Art Gallery in Sale is a permanent space for First Nations artists living and working on Gunaikurnai Country.<sup class="cite"><a href="#s14">14</a></sup> In Bairnsdale, the East Gippsland Aboriginal Arts Corporation is 100% Aboriginal-owned and promotes and sells local Aboriginal art.<sup class="cite"><a href="#s51">51</a></sup></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HISTORY ============ -->
+<section class="band bg-dark" id="history">
+  <div class="wrap">
+    <p class="eyebrow">Truth-telling</p>
+    <h2>Local history we share</h2>
+    <p class="intro">Truth-telling means hearing the history of a place, including the hard parts. These events shaped Gunaikurnai Country, and their effects are still felt.</p>
+    <ol class="timeline">
+      <li><span class="yr">30,000+ yrs</span><div class="tx"><b>Deep time.</b> The five Gunaikurnai clans have lived in Gippsland for more than 30,000 years.<sup class="cite"><a href="#s85">85</a></sup></div></li>
+      <li><span class="yr">1843</span><div class="tx"><b>Warrigal Creek.</b> In July 1843, after the killing of a settler’s nephew near Port Albert, Brataualung people were massacred at several sites around Warrigal Creek.<sup class="cite"><a href="#s21">21</a></sup> Estimates range from 60 to 150 people killed in an armed assault organised by squatter Angus McMillan.<sup class="cite"><a href="#s22">22</a></sup> Victoria’s Yoorrook Justice Commission recorded up to 150 lives lost at Warrigal Creek and 15 at Milly Creek.<sup class="cite"><a href="#s23">23</a></sup></div></li>
+      <li><span class="yr">1861</span><div class="tx"><b>Lake Tyers mission.</b> Anglican missionary John Bulmer established a mission at Lake Tyers; the reserve was gazetted in 1863. Bulmer encouraged residents to keep their culture and hunting. After the government took over in 1908, residents’ freedom of movement was restricted.<sup class="cite"><a href="#s17">17</a></sup></div></li>
+      <li><span class="yr">1863</span><div class="tx"><b>Ramahyuck.</b> A mission opened on the Avon River near Lake Wellington under Moravian missionary Friedrich Hagenauer, who was authoritarian and intolerant of Aboriginal culture.<sup class="cite"><a href="#s18">18</a></sup> Yoorrook’s record notes it was set up at a known massacre site, Boney Point.<sup class="cite"><a href="#s24">24</a></sup></div></li>
+      <li><span class="yr">1908</span><div class="tx"><b>Ramahyuck closes.</b> The orphanage and school shut, and remaining residents were sent to Lake Tyers.<sup class="cite"><a href="#s18">18</a></sup></div></li>
+      <li><span class="yr">1917</span><div class="tx"><b>“Concentration” policy.</b> The Board for the Protection of Aborigines adopted a policy of moving Aboriginal people from across Victoria to Lake Tyers.<sup class="cite"><a href="#s17">17</a></sup></div></li>
+      <li><span class="yr">1963</span><div class="tx"><b>The fight for Lake Tyers.</b> From 1956 residents campaigned for Lake Tyers to become an independent, Aboriginal-run cooperative.<sup class="cite"><a href="#s17">17</a></sup> On 23 May 1963, Pastor Doug Nicholls led a march to Parliament House against the planned closure, and Lake Tyers was declared a permanent reserve in 1965.<sup class="cite"><a href="#s19">19</a></sup></div></li>
+      <li><span class="yr">1971</span><div class="tx"><b>Land handed back.</b> Under the Aboriginal Lands Act 1970, Lake Tyers was handed to the Lake Tyers Aboriginal Trust with freehold title.<sup class="cite"><a href="#s20">20</a></sup></div></li>
+      <li><span class="yr">1972–75</span><div class="tx"><b>Community-controlled services.</b> An Aboriginal health service began in East Gippsland in 1972, and the Gippsland and East Gippsland Aboriginal Co-operative was established in 1975.<sup class="cite"><a href="#s41">41</a></sup></div></li>
+      <li><span class="yr">1992</span><div class="tx"><b>Ramahyuck District Aboriginal Corporation</b> was registered on 12 May 1992, from an idea by Elder Noel Yarram, to secure housing, jobs and health services in Sale.<sup class="cite"><a href="#s43">43</a></sup></div></li>
+      <li><span class="yr">2010</span><div class="tx"><b>Recognition.</b> Native title is recognised and the first settlement under the Traditional Owner Settlement Act is signed.<sup class="cite"><a href="#s4">4</a></sup></div></li>
+      <li><span class="yr">2018</span><div class="tx"><b>Joint management and renaming.</b> Victoria’s first Joint Management Plan is approved for Gunaikurnai parks.<sup class="cite"><a href="#s6">6</a></sup> The federal electorate named after Angus McMillan is renamed.<sup class="cite"><a href="#s22">22</a></sup></div></li>
+      <li><span class="yr">2025</span><div class="tx"><b>Truth and Treaty.</b> Yoorrook, Australia’s first formal truth-telling process, tabled its final reports on 1 July 2025.<sup class="cite"><a href="#s25">25</a></sup> They include 100 recommendations and recognise massacres against Gunaikurnai people.<sup class="cite"><a href="#s24">24</a></sup> On 13 November 2025, Victoria’s Statewide Treaty became law, creating a First Peoples’ body named <em>Gellung Warl</em>, “tip of the spear” in Gunaikurnai.<sup class="cite"><a href="#s26">26</a></sup> The Treaty remains politically contested: the Victorian Opposition has said it would move to repeal it if elected in November 2026.<sup class="cite"><a href="#s27">27</a></sup></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="band" id="services">
+  <div class="wrap">
+    <p class="eyebrow">Support</p>
+    <h2>Services on Gunaikurnai Country</h2>
+    <p class="intro">Aboriginal community-controlled organisations across Gippsland offer health, legal, family and cultural services. Details were checked in October 2026; contact each service to confirm hours and eligibility.</p>
+
+    <div class="grid g3 mt">
+      <article class="svc"><div class="top t-health">Health &amp; community</div><div class="body">
+        <h3>Gippsland &amp; East Gippsland Aboriginal Co-operative (GEGAC)</h3>
+        <p class="meta">37–53 Dalmahoy St, Bairnsdale. Primary health and dental, community services, children, youth and family services, and cultural business.<sup class="cite"><a href="#s41">41</a><a href="#s42">42</a></sup></p>
+        <a class="phone" href="tel:0351500700">(03) 5150 0700</a><sup class="cite"><a href="#s15">15</a></sup>
+        <p class="links"><a href="https://gegac.org.au/" rel="noopener">gegac.org.au</a></p>
+      </div></article>
+
+      <article class="svc"><div class="top t-health">Health &amp; community</div><div class="body">
+        <h3>Ramahyuck District Aboriginal Corporation</h3>
+        <p class="meta">Serves Aboriginal families in Wellington and Latrobe shires, with medical clinics in Sale and Morwell. GP clinics, social and emotional wellbeing, Stolen Generations services, family services, home and community care, early years, child care and a Koorie Maternity Service.<sup class="cite"><a href="#s87">87</a></sup></p>
+        <a class="phone" href="tel:0351431644">(03) 5143 1644</a><sup class="cite"><a href="#s87">87</a></sup>
+        <p class="meta" style="margin:0">Head office, 117 Foster St, Sale. Morwell clinic (03) 5136 5128.<sup class="cite"><a href="#s87">87</a></sup></p>
+        <p class="links"><a href="https://www.ramahyuck.org/" rel="noopener">ramahyuck.org</a></p>
+      </div></article>
+
+      <article class="svc"><div class="top t-health">Health &amp; children</div><div class="body">
+        <h3>Lake Tyers Health &amp; Children’s Services</h3>
+        <p class="meta">At Lake Tyers Aboriginal Trust. Primary health care, community services, child care and kindergarten, with health services provided free of charge.<sup class="cite"><a href="#s44">44</a><a href="#s86">86</a></sup></p>
+        <a class="phone" href="tel:0351558500">(03) 5155 8500</a><sup class="cite"><a href="#s45">45</a></sup>
+        <p class="links"><a href="https://betterhealth.vic.gov.au/serviceprofiles/aboriginal-health-services" rel="noopener">Service profile</a></p>
+      </div></article>
+
+      <article class="svc"><div class="top t-health">Health &amp; culture</div><div class="body">
+        <h3>Moogji Aboriginal Council East Gippsland</h3>
+        <p class="meta">52 Stanley St, Orbost, serving Orbost and Cann River. A health service, cultural programs and heritage work on significant sites.<sup class="cite"><a href="#s42">42</a><a href="#s46">46</a></sup></p>
+        <a class="phone" href="tel:0351542133">(03) 5154 2133</a><sup class="cite"><a href="#s46">46</a></sup>
+      </div></article>
+
+      <article class="svc"><div class="top t-legal">Legal</div><div class="body">
+        <h3>Victorian Aboriginal Legal Service (VALS)</h3>
+        <p class="meta">Criminal, family and civil law help for Aboriginal and Torres Strait Islander people, with offices including Bairnsdale and Morwell.<sup class="cite"><a href="#s47">47</a></sup></p>
+        <a class="phone" href="tel:1800064865">1800 064 865</a><sup class="cite"><a href="#s47">47</a></sup>
+        <p class="links"><a href="https://www.vals.org.au/" rel="noopener">vals.org.au</a></p>
+      </div></article>
+
+      <article class="svc"><div class="top t-legal">Family violence &amp; legal</div><div class="body">
+        <h3>Djirra</h3>
+        <p class="meta">Culturally safe legal and non-legal support for Aboriginal people experiencing family violence. The Bairnsdale office serves all of Gippsland, and a Morwell office opened in 2019.<sup class="cite"><a href="#s48">48</a><a href="#s49">49</a></sup></p>
+        <p class="links"><a href="https://djirra.org.au/" rel="noopener">djirra.org.au</a></p>
+      </div></article>
+
+      <article class="svc"><div class="top t-family">Children &amp; families</div><div class="body">
+        <h3>VACCA Gippsland</h3>
+        <p class="meta">The Victorian Aboriginal Child and Community Agency works in Morwell, including a place-based partnership to reduce the number of Aboriginal children in out-of-home care in Gippsland.<sup class="cite"><a href="#s50">50</a></sup></p>
+        <p class="links"><a href="https://www.vacca.org/" rel="noopener">vacca.org</a></p>
+      </div></article>
+
+      <article class="svc"><div class="top t-crisis">Crisis support · 24/7</div><div class="body">
+        <h3>13YARN</h3>
+        <p class="meta">A free, confidential crisis line where you talk with a Lifeline-trained Aboriginal or Torres Strait Islander Crisis Supporter, 24 hours a day.<sup class="cite"><a href="#s40">40</a></sup></p>
+        <a class="phone" href="tel:139276">13 92 76</a><sup class="cite"><a href="#s40">40</a></sup>
+        <p class="links"><a href="https://www.13yarn.org.au/" rel="noopener">13yarn.org.au</a></p>
+      </div></article>
+
+      <article class="svc"><div class="top t-culture">Country &amp; culture</div><div class="body">
+        <h3>GLaWAC</h3>
+        <p class="meta">The Traditional Owner corporation for Gunaikurnai Country, covering native title, cultural heritage, and land and water management.<sup class="cite"><a href="#s1">1</a><a href="#s13">13</a></sup></p>
+        <p class="links"><a href="https://gunaikurnai.org/" rel="noopener">gunaikurnai.org</a></p>
+      </div></article>
+    </div>
+
+    <div class="alert" role="note"><b>000</b><span>In an emergency, or if someone is in immediate danger, call Triple Zero.</span></div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVERS ============ -->
+<section class="band bg-cream" id="achievers">
+  <div class="wrap">
+    <p class="eyebrow">Achievers</p>
+    <div class="cal-head">
+      <div>
+        <h2 style="margin-bottom:.2em">Who shares your birth month?</h2>
+        <p class="intro" style="margin:0">Aboriginal and Torres Strait Islander trailblazers in sport, science, health, politics, law, art and music. Every birth date is checked against a published source.</p>
+      </div>
+      <div>
+        <label for="monthSelect">What’s your birth month?</label>
+        <select id="monthSelect"></select>
+      </div>
+    </div>
+    <div class="months" id="months" role="group" aria-label="Birth months"></div>
+    <div class="twins" id="twins" aria-live="polite"></div>
+
+    <h3 class="mt-lg">Gippsland connections</h3>
+    <div class="grid g3 mt">
+      <div class="card"><h4>Lionel Rose</h4><p>Born at Jacksons Track near Warragul in West Gippsland, he became the first Aboriginal Australian to win a world boxing title.<sup class="cite"><a href="#s60">60</a></sup> A statue in Warragul’s Mus Park, unveiled in 2010, honours him.<sup class="cite"><a href="#s60">60</a></sup></p></div>
+      <div class="card"><h4>Lidia Thorpe</h4><p>A Gunnai and Gunditjmara woman, she was the first Aboriginal woman elected to Victoria’s Parliament (2017) and the first Aboriginal senator for Victoria (2020).<sup class="cite"><a href="#s80">80</a><a href="#s81">81</a></sup> Her earlier community roles included the Lakes Entrance Aboriginal Education Consultative Group and the Nowa Nowa Primary School council.<sup class="cite"><a href="#s81">81</a></sup></p></div>
+      <div class="card"><h4>GLaWAC rangers</h4><p>Gunaikurnai crews care for Country, protect cultural heritage and deliver environmental services. One ranger describes working on Country as a healing process.<sup class="cite"><a href="#s2">2</a></sup> Gunaikurnai and Parks Victoria rangers jointly manage 14 parks and reserves.<sup class="cite"><a href="#s5">5</a></sup></p></div>
+    </div>
+
+    <h3 class="mt-lg">More trailblazers</h3>
+    <div class="grid g2 mt">
+      <div class="card"><h4>Professor Kelvin Kong · Medicine</h4><p>A Worimi man and ear, nose and throat surgeon, he became a Fellow of the Royal Australasian College of Surgeons in 2007 as Australia’s first Aboriginal surgeon. He was NAIDOC Person of the Year in 2023.<sup class="cite"><a href="#s79">79</a></sup></p></div>
+      <div class="card"><h4>Want to add someone?</h4><p>Many achievers, including scientists, doctors and environmentalists, don’t have a published birth date. To keep the calendar accurate, only people with a verified date appear in it.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECONCILIATION ============ -->
+<section class="band" id="reconciliation">
+  <div class="wrap">
+    <p class="eyebrow">Reconciliation 101</p>
+    <h2>What reconciliation looks like</h2>
+    <p class="intro">Reconciliation Action Plans (RAPs) give organisations a framework to act on reconciliation. They are built on three pillars: relationships, respect and opportunities. More than 3,000 organisations have one.<sup class="cite"><a href="#s34">34</a></sup></p>
+    <div class="steps" aria-label="The four RAP types">
+      <div><b>Reflect</b>Get ready and build understanding</div>
+      <div><b>Innovate</b>Develop and pilot new ways of working</div>
+      <div><b>Stretch</b>Embed reconciliation in core business</div>
+      <div><b>Elevate</b>Lead and influence beyond the organisation</div>
+    </div>
+    <p style="font-size:.92rem;color:var(--muted)">The four RAP types are set by Reconciliation Australia.<sup class="cite"><a href="#s34">34</a></sup> The short descriptions are a plain-language summary.</p>
+
+    <h3 class="mt-lg">Key terms</h3>
+    <dl class="gloss mt">
+      <div><dt>Yarning circle</dt><dd>A respectful, collaborative way of talking where everyone’s voice is equal. Organisations such as The Salvation Army have used yarning circles to shape their RAPs.<sup class="cite"><a href="#s35">35</a><a href="#s37">37</a></sup></dd></div>
+      <div><dt>Truth-telling</dt><dd>An ongoing process, not a single event, that puts historically silenced voices first. Its direction should be set by Aboriginal and Torres Strait Islander peoples.<sup class="cite"><a href="#s35">35</a></sup></dd></div>
+      <div><dt>Sorry Business</dt><dd>The ceremonial process First Nations people follow when they lose loved ones. It can carry an ongoing emotional and financial load.<sup class="cite"><a href="#s35">35</a></sup></dd></div>
+      <div><dt>Cultural load</dt><dd>The extra cultural expectations placed on Aboriginal and Torres Strait Islander people at work, on top of their actual job. Organisations such as TSA are teaching managers about its impact to help keep First Nations staff.<sup class="cite"><a href="#s35">35</a></sup></dd></div>
+      <div><dt>Competency vs capability</dt><dd>In plain terms, competency is what you know and can do (skills and knowledge). Capability is how you think and act (attitudes and behaviours).</dd></div>
+      <div><dt>“Nothing about us, without us”</dt><dd>A widely used principle: decisions that affect Aboriginal and Torres Strait Islander peoples should be made with them, not for them.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ CLOSING THE GAP ============ -->
+<section class="band bg-navy" id="closing-the-gap">
+  <div class="wrap">
+    <p class="eyebrow">Closing the Gap</p>
+    <h2>Where the gap stands</h2>
+    <p class="intro">In 2008 Australian governments formally committed to closing the gap in life expectancy, infant mortality, health, education and employment between First Nations and non-Indigenous Australians.<sup class="cite"><a href="#s33">33</a></sup> The current approach rests on the belief that outcomes improve when Aboriginal and Torres Strait Islander people have a genuine say in the policies and services that affect them.<sup class="cite"><a href="#s84">84</a></sup></p>
+
+    <div class="grid g2 mt">
+      <div>
+        <h3>The National Agreement</h3>
+        <p>The Coalition of Peaks, all Australian governments and the Australian Local Government Association signed the National Agreement on Closing the Gap on 27 July 2020.<sup class="cite"><a href="#s29">29</a></sup> It sets 19 socio-economic targets across 17 outcome areas.<sup class="cite"><a href="#s28">28</a></sup> At its centre are four Priority Reforms:<sup class="cite"><a href="#s30">30</a></sup></p>
+        <ol class="list">
+          <li>Formal partnerships and shared decision-making</li>
+          <li>Building the community-controlled sector</li>
+          <li>Transforming government organisations</li>
+          <li>Shared access to data and information at a regional level</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Progress report, July 2026</h3>
+        <p>The Productivity Commission’s sixth annual report, released 29 July 2026, assessed the 19 targets:<sup class="cite"><a href="#s31">31</a><a href="#s32">32</a></sup></p>
+        <div class="gapbar" role="img" aria-label="Of 19 targets: 1 met, 3 on track, 5 improving but not on track, 2 no change, 4 worsening, 4 unable to be assessed">
+          <div class="k-met" style="flex:1">1</div>
+          <div class="k-on" style="flex:3">3</div>
+          <div class="k-imp" style="flex:5;color:#24160f">5</div>
+          <div class="k-none" style="flex:2">2</div>
+          <div class="k-worse" style="flex:4">4</div>
+          <div class="k-na" style="flex:4;color:#24160f">4</div>
+        </div>
+        <ul class="legend">
+          <li><i class="k-met"></i>Met</li><li><i class="k-on"></i>On track</li><li><i class="k-imp"></i>Improving, not on track</li><li><i class="k-none"></i>No change</li><li><i class="k-worse"></i>Worsening</li><li><i class="k-na"></i>Can’t yet be assessed</li>
+        </ul>
+        <p class="mt">The deadline for most targets is 2031.<sup class="cite"><a href="#s32">32</a></sup> Explore the live <a href="https://www.pc.gov.au/closing-the-gap-data" rel="noopener">Closing the Gap dashboard</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPOTLIGHT ============ -->
+<section class="band bg-cream" id="spotlight">
+  <div class="wrap">
+    <p class="eyebrow">Spotlight</p>
+    <h2>One organisation’s journey: The Salvation Army Australia</h2>
+    <p class="intro">The Salvation Army (TSA) is one of Australia’s largest providers of social services, and launched its first Stretch RAP in 2025.<sup class="cite"><a href="#s35">35</a><a href="#s36">36</a></sup> Its public RAP documents are a useful case study of reconciliation in practice, including truth-telling about its own past.</p>
+
+    <div class="stats">
+      <div class="stat s1"><b>89 → 127</b><span>deliverables: Innovate RAP, then Stretch RAP<sup class="cite"><a href="#s35">35</a></sup></span></div>
+      <div class="stat s2"><b>+40%</b><span>First Nations hires, from 103 (2021–22) to 144 (2022–23)<sup class="cite"><a href="#s35">35</a></sup></span></div>
+      <div class="stat s3"><b>40% → 22%</b><span>First Nations staff turnover over the same years<sup class="cite"><a href="#s35">35</a></sup></span></div>
+      <div class="stat s4"><b>57</b><span>RAP yarning circles (34 on Country, 23 online) with 788 participants<sup class="cite"><a href="#s35">35</a></sup></span></div>
+    </div>
+
+    <div class="grid g2">
+      <div>
+        <h3>Milestones</h3>
+        <ol class="timeline">
+          <li><span class="yr">1921–48</span><div class="tx"><b>Purga.</b> TSA ran the Purga Aboriginal Mission near Ipswich at the Queensland Government’s request. Its RAP names this as part of truth-telling.<sup class="cite"><a href="#s35">35</a></sup></div></li>
+          <li><span class="yr">1997</span><div class="tx"><b>Statement of Reconciliation</b> recognising TSA’s harmful actions towards Indigenous Australians.<sup class="cite"><a href="#s38">38</a></sup></div></li>
+          <li><span class="yr">2009</span><div class="tx"><b>National reference group</b> formed under the leadership of Uncle Vince Ross.<sup class="cite"><a href="#s35">35</a></sup></div></li>
+          <li><span class="yr">2012</span><div class="tx"><b>First national ministry conference</b> recommends developing a RAP.<sup class="cite"><a href="#s35">35</a></sup></div></li>
+          <li><span class="yr">2015–20</span><div class="tx"><b>Early RAPs:</b> Eastern Territory Innovate RAP (2015), Victoria Reflect RAP (2016), Tasmania Reflect RAP (2020).<sup class="cite"><a href="#s35">35</a></sup></div></li>
+          <li><span class="yr">2017</span><div class="tx"><b>Uluru Statement.</b> TSA publicly supports the Uluru Statement from the Heart.<sup class="cite"><a href="#s35">35</a></sup></div></li>
+          <li><span class="yr">2019</span><div class="tx"><b>Advisory Council</b> established, led by Uncle Vince Ross.<sup class="cite"><a href="#s35">35</a></sup></div></li>
+          <li><span class="yr">2020</span><div class="tx"><b>First national RAP</b> (Innovate) unveiled on 3 December, built on about 100 yarning circles.<sup class="cite"><a href="#s37">37</a></sup></div></li>
+          <li><span class="yr">2023</span><div class="tx"><b>Recognition and the Voice.</b> TSA wins a SEEK STAR Award for diversity and inclusion and supports the Voice referendum. After the result, it commits to a “Yes” future.<sup class="cite"><a href="#s35">35</a></sup></div></li>
+          <li><span class="yr">2025</span><div class="tx"><b>Stretch RAP</b> (2025–2028) launched on 2 June.<sup class="cite"><a href="#s36">36</a></sup> A Reconciliation Ally Guunung (circle/camp) network followed in November.<sup class="cite"><a href="#s39">39</a></sup></div></li>
+        </ol>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Six key Stretch RAP commitments</h3>
+          <ol class="list">
+            <li>Truth-telling</li>
+            <li>Social justice and advocacy</li>
+            <li>A RAP Framework Database to track partnerships and actions</li>
+            <li>Cultural safety in TSA sites and services</li>
+            <li>A Reconciliation Ally “Guunung” (circle/camp) network</li>
+            <li>Supporting people through Sorry Business</li>
+          </ol>
+          <p class="mt" style="font-size:.92rem;color:var(--muted)">Source: TSA Stretch RAP 2025–2028.<sup class="cite"><a href="#s35">35</a></sup></p>
+        </div>
+        <div class="card mt">
+          <h3>Words with meaning</h3>
+          <p><strong>Ngumbe Bianga Guunung</strong>: the name of TSA’s RAP yarning circles, using Burunggam words from south-west Queensland for listening, yarning and returning to camp.<sup class="cite"><a href="#s35">35</a></sup></p>
+          <p><strong>Burra Burra</strong>: TSA’s pastoral care network for First Nations staff. The name means “big family” or “big mob”.<sup class="cite"><a href="#s35">35</a></sup></p>
+        </div>
+        <div class="card mt">
+          <h3>Did you know?</h3>
+          <p>Scottish explorer Tom Petrie once compared yarning circles to Salvation Army meetings.<sup class="cite"><a href="#s38">38</a></sup> Singer Harold Blair grew up at Purga under the care of Salvation Army mission staff.<sup class="cite"><a href="#s68">68</a></sup></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTION ============ -->
+<section class="band bg-dark" id="action">
+  <div class="wrap">
+    <p class="eyebrow">Take action</p>
+    <h2>What you can do next</h2>
+    <p class="intro">Reconciliation needs all of us. Here are practical steps you can take on Gunaikurnai Country.</p>
+    <ol class="actions mt">
+      <li><b>Know whose Country you’re on.</b><br>Much of Gippsland is Gunaikurnai Country.<sup class="cite"><a href="#s1">1</a></sup> Some parts are also Bunurong Country; TAFE Gippsland, for example, acknowledges both peoples across its campuses.<sup class="cite"><a href="#s13">13</a></sup> Use the clan map on <a href="https://gunaikurnai.org/our-story/" rel="noopener">GLaWAC’s website</a>.</li>
+      <li><b>Visit the Keeping Place.</b><br>Book a guided tour of the Krowathunkooloong Keeping Place in Bairnsdale.<sup class="cite"><a href="#s15">15</a></sup></li>
+      <li><b>Walk the Bataluk Cultural Trail.</b><br>Visit with respect. Leave everything where you find it.<sup class="cite"><a href="#s11">11</a></sup></li>
+      <li><b>Read the truth.</b><br>Start with <a href="https://www.firstpeoplesrelations.vic.gov.au/truth-telling-and-treaty" rel="noopener">Yoorrook’s final reports</a> and the colonial massacres map.<sup class="cite"><a href="#s21">21</a><a href="#s25">25</a></sup></li>
+      <li><b>Show up.</b><br>Join events for National Reconciliation Week (late May to 3 June) and NAIDOC Week (early July).<sup class="cite"><a href="#s35">35</a></sup></li>
+      <li><b>Back community control.</b><br>Refer people to local Aboriginal community-controlled organisations, and buy from Aboriginal-owned businesses and artists.<sup class="cite"><a href="#s51">51</a></sup></li>
+      <li><b>Lighten the cultural load.</b><br>Do your own learning rather than relying on Aboriginal colleagues to educate you.<sup class="cite"><a href="#s35">35</a></sup></li>
+      <li><b>Follow the data.</b><br>Check the <a href="https://www.pc.gov.au/closing-the-gap-data" rel="noopener">Closing the Gap dashboard</a> each year and ask what your workplace is doing.<sup class="cite"><a href="#s31">31</a></sup></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ SOURCES ============ -->
+<section class="band bg-white" id="sources">
+  <div class="wrap">
+    <p class="eyebrow">References</p>
+    <h2>Sources</h2>
+    <p class="intro">Every numbered citation on this page links here. Sources were checked in October 2026.</p>
+    <ol class="sources mt">
+      <li id="s1">Gunaikurnai Land and Waters Aboriginal Corporation (GLaWAC). <a href="https://gunaikurnai.org/our-story/" rel="noopener">Our Story</a>.</li>
+      <li id="s2">GLaWAC (22 Oct 2025). <a href="https://gunaikurnai.org/caring-for-country-growing-gippsland/" rel="noopener">Caring for Country, Growing Gippsland</a>.</li>
+      <li id="s3">Gippsland Monitor. <a href="https://www.gippslandmonitor.com.au/p/young-organisation-ancient-culture-gunaikurnai-aboriginal-corporation" rel="noopener">“Young as an organisation, ancient in culture”: GLaWAC celebrates 15 years</a>.</li>
+      <li id="s4">First Peoples – State Relations, Victorian Government. <a href="https://www.firstpeoplesrelations.vic.gov.au/gunaikurnai-recognition-and-settlement-agreement" rel="noopener">Gunaikurnai Recognition and Settlement Agreement</a>.</li>
+      <li id="s5">GLaWAC. <a href="https://gunaikurnai.org/our-country/joint-management/" rel="noopener">Joint Management</a>.</li>
+      <li id="s6">Premier of Victoria (1 Sep 2018). <a href="https://www.premier.vic.gov.au/landmark-plan-guide-victorian-parks-and-reserves" rel="noopener">Landmark Plan to Guide Victorian Parks and Reserves</a>.</li>
+      <li id="s7">GLaWAC. <a href="https://gunaikurnai.org/?p=472" rel="noopener">Stories &amp; Songlines</a>.</li>
+      <li id="s8">Bataluk Cultural Trail. <a href="https://batalukculturaltrail.com.au/stories/borun_tuk.php" rel="noopener">Borun the Pelican and Tuk the Musk Duck</a>.</li>
+      <li id="s9">Bataluk Cultural Trail. <a href="https://batalukculturaltrail.com.au/gunai%20kurnai%20clans.php" rel="noopener">The five clans of the Gunaikurnai</a>.</li>
+      <li id="s10">Bataluk Cultural Trail. <a href="https://batalukculturaltrail.com.au/" rel="noopener">Explore the Bataluk Cultural Trail</a>.</li>
+      <li id="s11">Bataluk Cultural Trail. <a href="https://batalukculturaltrail.com.au/the-heritage-act.php" rel="noopener">The Heritage Act of Victoria and trail sites</a>.</li>
+      <li id="s12">The Middle of Everywhere (Wellington Shire). <a href="https://middleofeverywhere.themiddleofeverywhere.com.au/en/itineraries/bataluk-cultural-trail" rel="noopener">Bataluk Cultural Trail itinerary</a>.</li>
+      <li id="s13">TAFE Gippsland. <a href="https://www.tafegippsland.edu.au/about/Acknowledgment_of_Country" rel="noopener">Acknowledgment of Country</a>.</li>
+      <li id="s14">Gippsland Art Gallery. <a href="https://www.gippslandartgallery.com/collection-and-resources/borun-tuk-gallery" rel="noopener">Borun &amp; Tuk Gallery</a>.</li>
+      <li id="s15">Gippsland and East Gippsland Aboriginal Co-operative (GEGAC). <a href="https://gegac.org.au/keepingplace/" rel="noopener">Krowathunkooloong Keeping Place</a>.</li>
+      <li id="s16">Bataluk Cultural Trail. <a href="https://batalukculturaltrail.com.au/krowathunkooloong.php" rel="noopener">Krowathunkooloong Keeping Place</a>.</li>
+      <li id="s17">Find &amp; Connect. <a href="https://www.findandconnect.gov.au/guide/vic/E000928" rel="noopener">Lake Tyers Mission Station</a>.</li>
+      <li id="s18">Find &amp; Connect. <a href="https://www.findandconnect.gov.au/guide/vic/E000927" rel="noopener">Ramahyuck Aboriginal Mission</a>.</li>
+      <li id="s19">Melbourne Law School. <a href="https://law.unimelb.edu.au/iljh/research/mls-classroom-photo-mural-initiative/classroom-photos/lake-tyers" rel="noopener">Pastor Doug Nicholls leads Aboriginal people from Lake Tyers to Parliament House, 23 May 1963</a>.</li>
+      <li id="s20">Museums Victoria Collections. <a href="https://collections.museumsvictoria.com.au/items/1164723" rel="noopener">Lake Tyers photograph and history notes</a>.</li>
+      <li id="s21">University of Newcastle. <a href="https://c21ch.newcastle.edu.au/colonialmassacres/detail.php?r=537" rel="noopener">Colonial Frontier Massacres in Australia: Warrigal Creek</a>.</li>
+      <li id="s22">Wikipedia. <a href="https://en.wikipedia.org/wiki/Angus_McMillan" rel="noopener">Angus McMillan</a>.</li>
+      <li id="s23">South Gippsland Sentinel-Times. <a href="https://www.sgst.com.au/truth-be-told-gippsland-has-a-lot-to-answer-for-they-say/" rel="noopener">Truth be told, Gippsland has a lot to answer for</a>.</li>
+      <li id="s24">Latrobe Valley Express (15 Jul 2025). <a href="https://latrobevalleyexpress.com.au/news/2025/07/15/report-to-pave-a-way-forward/" rel="noopener">Report to pave a way forward</a>.</li>
+      <li id="s25">First Peoples – State Relations. <a href="https://www.firstpeoplesrelations.vic.gov.au/truth-telling-and-treaty" rel="noopener">Truth-telling and Treaty</a>.</li>
+      <li id="s26">National Indigenous Times (13 Nov 2025). <a href="https://nit.com.au/13-11-2025/21259/these-words-will-not-disappear-victorian-treaty-signed-into-law" rel="noopener">“These words will not disappear”: Victorian Treaty signed into law</a>.</li>
+      <li id="s27">The New Daily (31 Oct 2025). <a href="https://www.thenewdaily.com.au/news/indigenous-news/2025/10/31/victoria-indigenous-treaty-2" rel="noopener">Victoria makes history with Australia-first treaty</a>.</li>
+      <li id="s28">Closing the Gap. <a href="https://www.closingthegap.gov.au/national-agreement" rel="noopener">National Agreement on Closing the Gap</a>.</li>
+      <li id="s29">Coalition of Peaks. <a href="https://coalitionofpeaks.org.au/new-national-agreement-on-closing-the-gap/" rel="noopener">National Agreement on Closing the Gap</a>.</li>
+      <li id="s30">Department of Social Services. <a href="https://www.dss.gov.au/closing-gap" rel="noopener">About Closing the Gap</a>.</li>
+      <li id="s31">Productivity Commission. <a href="https://www.pc.gov.au/closing-the-gap-data/annual-data-report/2026" rel="noopener">Closing the Gap Annual Data Compilation Report, July 2026</a>.</li>
+      <li id="s32">Proctor (Queensland Law Society), Aug 2026. <a href="https://www.qlsproctor.com.au/2026/08/commissioner-to-highlight-latest-closing-the-gap-data/" rel="noopener">Commissioner to highlight latest Closing the Gap data</a>.</li>
+      <li id="s33">Australians Together. <a href="https://australianstogether.org.au/discover-and-learn/the-wound/indigenous-disadvantage-in-australia" rel="noopener">First Nations disadvantage in Australia</a>.</li>
+      <li id="s34">Reconciliation Australia. <a href="https://www.reconciliation.org.au/reconciliation-action-plans/about-raps/" rel="noopener">About RAPs</a>.</li>
+      <li id="s35">The Salvation Army Australia Territory. <a href="https://web.prod.salvationarmy.org.au/siteassets/a.-national/aboriginal-and-torres-strait-islander/stretch-reconciliation-action-plan.pdf" rel="noopener">Stretch Reconciliation Action Plan, June 2025 – June 2028 (PDF)</a>.</li>
+      <li id="s36">The Salvation Army Australia. <a href="https://www.salvationarmy.org.au/about-us/governance-policy/reconciliation-plan/" rel="noopener">Reconciliation Action Plan</a>.</li>
+      <li id="s37">The Salvation Army Australia (3 Dec 2020). <a href="https://www.salvationarmy.org.au/news/salvation-army-delivers-reconciliation-action-plan/" rel="noopener">Salvation Army delivers Reconciliation Action Plan</a>.</li>
+      <li id="s38">Salvos Online. <a href="https://www.salvosonline.org.au/post/the-salvation-army-s-journey-of-reconciliation" rel="noopener">The Salvation Army’s journey of reconciliation</a>.</li>
+      <li id="s39">Salvos Online (3 Jun 2026). <a href="https://www.salvosonline.org.au/post/stretch-rap-marks-one-year-of-walking-together-towards-reconciliation" rel="noopener">Stretch RAP marks one year of ‘walking together’ towards reconciliation</a>.</li>
+      <li id="s40">13YARN. <a href="https://www.13yarn.org.au/about-us" rel="noopener">About us</a>.</li>
+      <li id="s41">VACCHO. <a href="https://www.vaccho.org.au/archive/index.php/om/our-membership/members/gegac/" rel="noopener">Gippsland and East Gippsland Aboriginal Co-operative member profile</a>.</li>
+      <li id="s42">Coroners Court of Victoria. <a href="https://coronerscourt.vic.gov.au/families/supports-and-resources/aboriginal-services/aboriginal-services-gippsland" rel="noopener">Aboriginal services (Gippsland)</a>.</li>
+      <li id="s43">NACCHO Communiqué (16 Oct 2012). <a href="https://nacchocommunique.com/2012/10/16/ramahyuck-district-aboriginal-corporation-celebrates-its-20-year-anniversary/" rel="noopener">Ramahyuck District Aboriginal Corporation celebrates its 20 year anniversary</a>.</li>
+      <li id="s44">Better Health Channel. <a href="https://betterhealth.vic.gov.au/serviceprofiles/aboriginal-health-services" rel="noopener">Aboriginal health services</a>.</li>
+      <li id="s45">My Aged Care. <a href="https://www.myagedcare.gov.au/find-a-provider/search/0brdqp74k-lake-tyers-health-and-children-services-association/commonwealth-home-support-program" rel="noopener">Lake Tyers Health &amp; Children Services Association</a>.</li>
+      <li id="s46">Bataluk Cultural Trail. <a href="https://batalukculturaltrail.com.au/orgs/moogji.php" rel="noopener">Moogji Aboriginal Council</a>.</li>
+      <li id="s47">Fitzroy Legal Service, The Law Handbook 2024. <a href="https://fls.org.au/app/uploads/LHB_2024_Flipbook/71" rel="noopener">Victorian Aboriginal Legal Service</a>.</li>
+      <li id="s48">Fitzroy Legal Service, The Law Handbook. <a href="https://fls.org.au/law-handbook/relationships-families-and-young-people/family-violence/family-violence-contacts/" rel="noopener">Family violence: contacts</a>.</li>
+      <li id="s49">Latrobe Valley Express (8 May 2019). <a href="https://latrobevalleyexpress.com.au/news/2019/05/08/djirra-opening-offers-new-hope/" rel="noopener">Djirra opening offers new hope</a>.</li>
+      <li id="s50">VACCA. <a href="https://www.vacca.org/page/media/morwell-place-based-partnership-to-address-overrepresentation-of-aboriginal-children-in-care/" rel="noopener">Morwell place-based partnership to address overrepresentation of Aboriginal children in care</a>.</li>
+      <li id="s51">Bataluk Cultural Trail. <a href="https://batalukculturaltrail.com.au/orgs/egaac.php" rel="noopener">East Gippsland Aboriginal Arts Corporation</a>.</li>
+      <li id="s52">National Film and Sound Archive. <a href="https://www.nfsa.gov.au/stories/articles/vale-archie-roach" rel="noopener">Vale Archie Roach</a>.</li>
+      <li id="s53">AIATSIS. <a href="https://aiatsis.gov.au/explore/cathy-freeman" rel="noopener">Cathy Freeman</a>.</li>
+      <li id="s54">Senate Biographical Dictionary. <a href="https://biography.senate.gov.au/bonner-neville-thomas/" rel="noopener">Bonner, Neville Thomas (1922–1999)</a>.</li>
+      <li id="s55">International Tennis Hall of Fame. <a href="https://breakingboundaries.tennisfame.com/players/ashleigh-barty" rel="noopener">Ashleigh Barty</a>.</li>
+      <li id="s56">Wikipedia. <a href="https://en.wikipedia.org/wiki/Troy_Cassar-Daley" rel="noopener">Troy Cassar-Daley</a>.</li>
+      <li id="s57">Northern Daily Leader (2025). <a href="https://www.northerndailyleader.com.au/story/8875410/healing-troy-cassar-daley-sweeps-golden-guitars/" rel="noopener">Healing: Troy Cassar-Daley sweeps Golden Guitars</a>.</li>
+      <li id="s58">National Portrait Gallery. <a href="https://portrait.gov.au/people/lionel-edmund-rose-1948" rel="noopener">Lionel Rose</a>.</li>
+      <li id="s59">Wikipedia. <a href="https://en.wikipedia.org/wiki/Lionel_Rose" rel="noopener">Lionel Rose</a>.</li>
+      <li id="s60">Monument Australia. <a href="https://monumentaustralia.org.au/themes/people/sport/display/90345-lionel-rose" rel="noopener">Lionel Rose statue, Warragul</a>.</li>
+      <li id="s61">AIATSIS. <a href="https://aiatsis.gov.au/explore/eddie-koiki-mabo" rel="noopener">Eddie Koiki Mabo</a>.</li>
+      <li id="s62">National Portrait Gallery. <a href="https://portrait.gov.au/portraitofanation/namatjira-biography.html" rel="noopener">Albert Namatjira</a>.</li>
+      <li id="s63">Art Gallery of New South Wales. <a href="https://www.artgallery.nsw.gov.au/collection/artists/namatjira-albert/" rel="noopener">Albert Namatjira</a>.</li>
+      <li id="s64">Australian Dictionary of Biography. <a href="https://adb.anu.edu.au/biography/odonoghue-lowitja-34124" rel="noopener">O’Donoghue, Lowitja (1932–2024)</a>.</li>
+      <li id="s65">Lowitja O’Donoghue Foundation. <a href="https://lowitja.org.au/lowitja-foundation/dr-lowitja-odonoghue-ac-cbe-dgs-biography-and-achievements-timeline/" rel="noopener">Biography and achievements timeline</a>.</li>
+      <li id="s66">Reserve Bank of Australia. <a href="https://www.banknotes.rba.gov.au/australias-banknotes/people-on-the-banknotes/david-unaipon" rel="noopener">David Unaipon (1872–1967)</a>.</li>
+      <li id="s67">Australian Dictionary of Biography. <a href="https://adb.anu.edu.au/biography/blair-harold-9520" rel="noopener">Blair, Harold (1924–1976)</a>.</li>
+      <li id="s68">Cherbourg Memory. <a href="https://cherbourgmemory.org/harold-blair-singer-and-aboriginal-activist-1924-to-1976" rel="noopener">Harold Blair 1924 to 1976</a>.</li>
+      <li id="s69">AFL. <a href="https://www.afl.com.au/news/666848/afl-congratulates-shaun-burgoyne" rel="noopener">AFL congratulates Shaun Burgoyne</a>.</li>
+      <li id="s70">Wikipedia. <a href="https://en.wikipedia.org/wiki/Shaun_Burgoyne" rel="noopener">Shaun Burgoyne</a>.</li>
+      <li id="s71">First Peoples – State Relations. <a href="https://www.firstpeoplesrelations.vic.gov.au/ruby-hunter" rel="noopener">Ruby Hunter</a>.</li>
+      <li id="s72">Wikipedia. <a href="https://en.wikipedia.org/wiki/Ruby_Hunter" rel="noopener">Ruby Hunter</a>.</li>
+      <li id="s73">Care Experience and Culture. <a href="https://www.careexperienceandculture.com/master/ruby-hunter" rel="noopener">Ruby Hunter</a>.</li>
+      <li id="s74">Australian Dictionary of Biography. <a href="https://adb.anu.edu.au/biography/noonuccal-oodgeroo-18057" rel="noopener">Noonuccal, Oodgeroo (1920–1993)</a>.</li>
+      <li id="s75">Victorian Government. <a href="https://www.vic.gov.au/aunty-oodgeroo-noonuccal" rel="noopener">Aunty Oodgeroo Noonuccal</a>.</li>
+      <li id="s76">Wikipedia. <a href="https://en.wikipedia.org/wiki/Eddie_Betts" rel="noopener">Eddie Betts</a>.</li>
+      <li id="s77">Australian Dictionary of Biography. <a href="https://adb.anu.edu.au/biography/nicholls-sir-douglas-ralph-doug-14920" rel="noopener">Nicholls, Sir Douglas Ralph (Doug) (1906–1988)</a>.</li>
+      <li id="s78">Wikipedia. <a href="https://en.wikipedia.org/wiki/Douglas_Nicholls" rel="noopener">Douglas Nicholls</a>.</li>
+      <li id="s79">Australian Indigenous Doctors’ Association (28 Jul 2025). <a href="https://aida.org.au/lets-yarn-with-professor-kelvin-kong/" rel="noopener">Let’s Yarn! With Professor Kelvin Kong</a>.</li>
+      <li id="s80">SBS NITV (6 Oct 2020). <a href="https://www.sbs.com.au/nitv/article/2020/10/06/first-aboriginal-person-elected-senate-represent-victoria-sworn" rel="noopener">First Aboriginal person elected to the Senate to represent Victoria sworn in</a>.</li>
+      <li id="s81">Indigenous Fellowship. <a href="https://indigenousfellowship.net.au/emerging-leaders/lidia-thorpe/" rel="noopener">Lidia Thorpe</a>.</li>
+      <li id="s82">Wikipedia. <a href="https://en.wikipedia.org/wiki/Archie_Roach" rel="noopener">Archie Roach</a>.</li>
+      <li id="s83">Encyclopaedia Britannica. <a href="https://www.britannica.com/biography/Cathy-Freeman" rel="noopener">Cathy Freeman</a>.</li>
+      <li id="s84">Closing the Gap. <a href="https://www.closingthegap.gov.au/" rel="noopener">A new way of working together</a>.</li>
+      <li id="s85">Bataluk Cultural Trail. <a href="https://batalukculturaltrail.com.au/sites.php" rel="noopener">Exploring the Bataluk Cultural Trail (sites)</a>.</li>
+      <li id="s86">Disability Gateway. <a href="https://www.disabilitygateway.gov.au/node/9026" rel="noopener">Lake Tyers Health and Children’s Services (LTHCS)</a>.</li>
+      <li id="s87">Ramahyuck District Aboriginal Corporation. <a href="https://www.ramahyuck.org/" rel="noopener">Wunman Njinde, welcome to Ramahyuck</a>.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>About this page.</strong> This is an independent, non-commercial learning resource. It is not affiliated with or endorsed by GLaWAC, The Salvation Army, or any other organisation named here. Facts were checked against the listed sources in October 2026. Services change, so please confirm details with each organisation.</p>
+    <p>No artwork from Aboriginal artists has been reproduced. The design uses simple shapes and earth colours only. To add artwork, commission or license it from a local Gunaikurnai artist.</p>
+    <p><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<a class="totop" id="totop" href="#top">↑ Top</a>
+
+<script>
+(function(){
+  function cite(ids){
+    return '<sup class="cite">' + ids.map(function(n){
+      return '<a href="#s' + n + '">' + n + '</a>';
+    }).join("") + '</sup>';
+  }
+
+  /* ---------- Did you know? rotator ---------- */
+  var facts = [
+    ["The Gunaikurnai settlement on 22 October 2010 was the first made under Victoria’s Traditional Owner Settlement Act 2010.", [4]],
+    ["<em>Gellung Warl</em>, the name of the First Peoples’ body created by Victoria’s Treaty, means “tip of the spear” in Gunaikurnai.", [26]],
+    ["<em>Bataluk</em> is a Gunaikurnai word for lizard. The cultural trail named after it winds through East Gippsland like a lizard’s tail.", [10]],
+    ["In 1971, Lake Tyers was handed to the Lake Tyers Aboriginal Trust with freehold title.", [20]],
+    ["In the Gunaikurnai creation story, Borun the pelican and Tuk the musk duck are the parents of the five clans.", [7,8]],
+    ["Lionel Rose, born at Jacksons Track in West Gippsland, was named Australian of the Year in 1968, the first Aboriginal person to receive the honour.", [58,60]],
+    ["David Unaipon, the man on the $50 note, explored the principle of the helicopter in 1914 using the boomerang.", [66]],
+    ["The name Ramahyuck joins the biblical word <em>Ramah</em> with the Gunai word <em>yuck</em>, meaning mother or own.", [18]],
+    ["Middens in East Gippsland have been dated at more than 10,000 years old.", [12]],
+    ["As of July 2026, only 1 of the 19 national Closing the Gap targets had been met.", [31]],
+    ["In Gunaikurnai lore, all men belong to <em>Yeerung</em>, the southern emu-wren, and all women to <em>Djeetgun</em>, the superb blue wren.", [7]],
+    ["The Knob Reserve at Stratford was chosen as the place to sign the 2010 Gunaikurnai native title determination.", [12]]
+  ];
+  var fi = Math.floor(Math.random()*facts.length);
+  var factBox = document.getElementById("fact");
+  var factText = document.getElementById("factText");
+  var factCount = document.getElementById("factCount");
+  function showFact(){
+    factText.innerHTML = facts[fi][0] + cite(facts[fi][1]);
+    factCount.textContent = "Fact " + (fi+1) + " of " + facts.length;
+  }
+  document.getElementById("factBtn").addEventListener("click", function(){
+    factBox.classList.add("fade");
+    setTimeout(function(){
+      fi = (fi + 1) % facts.length;
+      showFact();
+      factBox.classList.remove("fade");
+    }, 180);
+  });
+  showFact();
+
+  /* ---------- Birth-month calendar ---------- */
+  var MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var people = [
+    {m:0, day:"8", name:"Archie Roach", born:"8 January 1956 · Mooroopna, Vic", mob:"Gunditjmara and Bundjalung", field:"Music", f:"music",
+     text:"Songman and storyteller. His 1990 debut album <em>Charcoal Lane</em> carried ‘Took the Children Away’, his song about the Stolen Generations, and he won an ARIA for Best New Talent.", c:[52,82]},
+    {m:1, day:"16", name:"Cathy Freeman", born:"16 February 1973 · Mackay, Qld", mob:"Kuku Yalanji and Burri Gubba heritage", field:"Sport", f:"sport",
+     text:"Australian of the Year in 1998. At the Sydney 2000 Olympics she lit the cauldron, then won the 400 m, becoming the first Aboriginal Australian to win an individual Olympic gold.", c:[53,83]},
+    {m:2, day:"28", name:"Neville Bonner", born:"28 March 1922 · Ukerebagh Island, NSW", mob:"Jagera", field:"Politics", f:"politics",
+     text:"Senator for Queensland from 1971 to 1983, and the first Indigenous Australian to sit in federal Parliament.", c:[54]},
+    {m:3, day:"24", name:"Ash Barty", born:"24 April 1996 · Ipswich, Qld", mob:"Ngarigo", field:"Sport", f:"sport",
+     text:"Won Wimbledon in 2021, the first Australian woman to do so since Evonne Goolagong in 1980. She retired in 2022 as world No. 1, soon after winning the Australian Open.", c:[55]},
+    {m:4, day:"18", name:"Troy Cassar-Daley", born:"18 May 1969 · Sydney", mob:"Gumbaynggirr and Bundjalung", field:"Music", f:"music",
+     text:"Country music great with 45 Golden Guitars by 2025, and the 50th inductee into the Australasian Roll of Renown in 2017.", c:[56,57]},
+    {m:5, day:"21", name:"Lionel Rose", born:"21 June 1948 · Jacksons Track, West Gippsland", mob:"Gunditjmara", field:"Sport", f:"sport", local:true,
+     text:"Won the world bantamweight title in Tokyo in 1968, the first Aboriginal Australian to win a world boxing title. More than 250,000 people welcomed him home, and he became the first Aboriginal Australian of the Year.", c:[58,59,60]},
+    {m:5, day:"29", name:"Eddie Koiki Mabo", born:"29 June 1936 · Las, Mer (Murray Island)", mob:"Meriam", field:"Land rights", f:"law",
+     text:"Lead plaintiff in the case that overturned the fiction of <em>terra nullius</em>. The High Court decided in his favour on 3 June 1992, months after he died.", c:[61]},
+    {m:6, day:"28", name:"Albert Namatjira", born:"28 July 1902 · Hermannsburg (Ntaria), NT", mob:"Western Arrernte", field:"Art", f:"art",
+     text:"Master of watercolour and founder of the Hermannsburg School. In 1957 he became the first Aboriginal person granted conditional Australian citizenship.", c:[62,63]},
+    {m:7, day:"1", name:"Dr Lowitja O’Donoghue", born:"1 August 1932 (birthday given by missionaries) · De Rose Hill, SA", mob:"Yankunytjatjara", field:"Health & leadership", f:"health",
+     text:"The first Aboriginal trainee nurse at the Royal Adelaide Hospital (1954), Australian of the Year in 1984, and the first Aboriginal person to address the United Nations General Assembly.", c:[64,65]},
+    {m:8, day:"28", name:"David Unaipon", born:"28 September 1872 · Point McLeay (Raukkan), SA", mob:"Ngarrindjeri", field:"Science & invention", f:"science",
+     text:"Patented an improved sheep-shearing tool in 1909, explored helicopter flight using the boomerang principle, and became the first Aboriginal writer to be published. He appears on the $50 note.", c:[66]},
+    {m:8, day:"13", name:"Harold Blair", born:"13 September 1924 (probable) · Cherbourg, Qld", mob:"Cherbourg-born tenor", field:"Music & activism", f:"music",
+     text:"Grew up at Purga Mission in the care of Salvation Army staff, then earned a music diploma from Melbourne’s Melba Conservatorium in 1949. He later served on Victoria’s Aborigines’ Welfare Board.", c:[67,68]},
+    {m:9, day:"21", name:"Shaun Burgoyne", born:"21 October 1982 · Darwin", mob:"Kokatha and Awarai", field:"Sport", f:"sport",
+     text:"Played 407 VFL/AFL games, the most by any Aboriginal or Torres Strait Islander player, and won four premierships.", c:[69,70]},
+    {m:9, day:"31", name:"Ruby Hunter", born:"31 October 1955 · near Renmark, SA", mob:"Ngarrindjeri", field:"Music", f:"music",
+     text:"The first Aboriginal woman signed to a major record label, with her debut album <em>Thoughts Within</em> in 1994. She met Archie Roach at a Salvation Army drop-in centre in Adelaide.", c:[71,72,73]},
+    {m:10, day:"3", name:"Oodgeroo Noonuccal", born:"3 November 1920 · Bulimba, Brisbane", mob:"Noonuccal people of Minjerribah", field:"Literature & environment", f:"lit",
+     text:"Her 1964 collection <em>We Are Going</em> was the first book of poetry published by an Aboriginal Australian. A campaigner in the 1967 referendum, she is also remembered as an environmentalist and educator.", c:[74,75]},
+    {m:10, day:"26", name:"Eddie Betts", born:"26 November 1986 · Port Lincoln, SA", mob:"Wirangu, Kokatha and Guburn", field:"Sport", f:"sport",
+     text:"Kicked 640 goals in 350 AFL games and won four AFL Goal of the Year awards.", c:[76]},
+    {m:11, day:"9", name:"Sir Doug Nicholls", born:"9 December 1906 · Cummeragunja, NSW", mob:"Yorta Yorta", field:"Activism & public life", f:"politics", local:true,
+     text:"Footballer, pastor and Governor of South Australia (1976–77), still the only Indigenous Australian appointed to vice-regal office. In 1963 he led the march to Parliament to save Lake Tyers.", c:[77,78,19]}
+  ];
+
+  var monthsEl = document.getElementById("months");
+  var selectEl = document.getElementById("monthSelect");
+  var twinsEl = document.getElementById("twins");
+  var buttons = [];
+
+  MONTHS.forEach(function(name, i){
+    var who = people.filter(function(p){return p.m===i;}).map(function(p){return p.name;}).join(" · ");
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "month";
+    b.setAttribute("aria-pressed","false");
+    b.setAttribute("aria-label", name + ": " + who);
+    b.innerHTML = '<span class="mn">' + name.slice(0,3) + '</span><span class="who">' + who + '</span>';
+    b.addEventListener("click", function(){ select(i, true); });
+    monthsEl.appendChild(b);
+    buttons.push(b);
+    var o = document.createElement("option");
+    o.value = i; o.textContent = name;
+    selectEl.appendChild(o);
+  });
+  selectEl.addEventListener("change", function(){ select(parseInt(selectEl.value,10), false); });
+
+  function select(i, fromTile){
+    buttons.forEach(function(b, j){ b.setAttribute("aria-pressed", j===i ? "true":"false"); });
+    selectEl.value = i;
+    var list = people.filter(function(p){return p.m===i;});
+    var html = '<h3>Born in ' + MONTHS[i] + '</h3>';
+    list.forEach(function(p){
+      html += '<article class="person">' +
+        '<div class="side f-' + p.f + '"><span class="day">' + p.day + '</span><span class="tag">' + p.field + '</span></div>' +
+        '<div class="main">' +
+          (p.local ? '<span class="local">Gippsland connection</span><br>' : '') +
+          '<h4>' + p.name + '</h4>' +
+          '<div class="sub">' + p.born + ' · ' + p.mob + '</div>' +
+          '<p>' + p.text + cite(p.c) + '</p>' +
+        '</div></article>';
+    });
+    twinsEl.innerHTML = html;
+    if (fromTile && window.matchMedia("(max-width:760px)").matches){
+      twinsEl.scrollIntoView({behavior:"smooth", block:"start"});
+    }
+  }
+  select(new Date().getMonth(), false);
+
+  /* ---------- Back to top ---------- */
+  var totop = document.getElementById("totop");
+  window.addEventListener("scroll", function(){
+    totop.classList.toggle("show", window.scrollY > 900);
+  }, {passive:true});
+})();
+</script>
+</body>
+</html>
